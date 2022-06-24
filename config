@@ -1,15 +1,35 @@
+############################################################
+#
+#   .ssh/config
+#
+#   Sample OpenSSH client configuration
+#   For accessing UCL services
+#
+#   https://github.com/ccaabrw/ssh-config
+#
+#                                           Brian Watts
+#                                           June 2022
+#
+############################################################
+
+# Maintain SSH sessions
 ServerAliveInterval 250
 
+# Don't display login banner for git operations
 Match User git
     LogLevel quiet
 
+# UCL SSH Gateway service
 Host ssh-gateway
     HostName ssh-gateway.ucl.ac.uk
     LogLevel quiet
 
+# Socrates: Interactive Unix service
 Host socrates
     HostName socrates.ucl.ac.uk
     ProxyJump ssh-gateway
 
+# Default user for all connections
 Host *
     User ccaaxyz
+    #    ^^^^^^^    Change to your userid
