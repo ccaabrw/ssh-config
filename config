@@ -1,0 +1,15 @@
+ServerAliveInterval 250
+
+Match User git
+    LogLevel quiet
+
+Host ssh-gateway
+    HostName ssh-gateway.ucl.ac.uk
+    LogLevel quiet
+
+Host socrates
+    HostName socrates.ucl.ac.uk
+    ProxyJump ssh-gateway
+
+Host *
+    User ccaaxyz
