@@ -12,13 +12,13 @@ To get started with OpenSSH configuration:
 Ensure .ssh exists
 
 ```
-cd ~/.ssh
+mkdir -p ~/.ssh
 ```
 
 Download sample config:
 
 ```
-curl -O https://raw.githubusercontent.com/ccaabrw/ssh-config/main/config
+curl -L http://bit.ly/ssh-config -o ~/.ssh/config
 ```
 
 Edit the file to include your userid
