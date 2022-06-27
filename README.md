@@ -19,6 +19,8 @@ Ensure .ssh exists
 mkdir -p ~/.ssh
 ```
 
+If you don't have an exisitng configuration, then start with this one.
+
 Download sample config:
 
 ```
