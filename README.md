@@ -32,3 +32,12 @@ curl.exe -L http://bit.ly/ssh-config | Out-File config -encoding ascii
 ```
 
 Edit the file to include your userid
+
+
+
+
+
+Useful article about SSH proxy:
+https://www.redhat.com/sysadmin/ssh-proxy-bastion-proxyjump
+
+
