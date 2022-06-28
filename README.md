@@ -37,7 +37,11 @@ Edit the file to include your userid
 
 
 
-Useful article about SSH proxy:
+Useful articles:
+
+
+
 https://www.redhat.com/sysadmin/ssh-proxy-bastion-proxyjump
 
+https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client
 
