@@ -37,6 +37,12 @@ Edit the file to include your userid
 
 
 
+## Server Configuration
+
+See [sshd_config.md](sshd_config.md) for server-side configuration examples.
+
+---
+
 Useful articles:
 
 

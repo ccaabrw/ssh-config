@@ -1,0 +1,23 @@
+############################################################
+#
+#   /etc/ssh/sshd_config
+#
+#   Sample OpenSSH server configuration
+#   Demonstrates allowing password authentication from
+#   specified subnets while requiring SSH key authentication
+#   from all other networks.
+#
+#   https://github.com/ccaabrw/ssh-config
+#
+############################################################
+
+# Disable password authentication globally (require SSH keys by default)
+PasswordAuthentication no
+
+# Disable empty passwords
+PermitEmptyPasswords no
+
+# Allow password authentication only from trusted internal subnets
+# Adjust the Address values to match your network ranges
+Match Address 10.0.0.0/8,172.16.0.0/12,192.168.0.0/16
+    PasswordAuthentication yes
