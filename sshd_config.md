@@ -10,3 +10,8 @@ Edit the `Address` values in the `Match` block to match your own internal networ
 ```
 sudo systemctl restart sshd
 ```
+
+---
+
+The ssh change may not work if you have "UsePAM yes" in sshd_config.
+To fix you need to also add "ChallengeResponseAuthentication no".
