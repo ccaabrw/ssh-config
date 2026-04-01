@@ -29,6 +29,11 @@ Host socrates
     HostName socrates.ucl.ac.uk
     ProxyJump ssh-gateway
 
+# Myriad: Research Computing service
+Host myriad
+    HostName myriad.rc.ucl.ac.uk
+    ProxyJump ssh-gateway
+
 # Default user for all connections
 Host *
     User ccaaxyz
